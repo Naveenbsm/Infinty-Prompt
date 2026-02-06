@@ -1,5 +1,6 @@
 ## Infinty Prompt
 Infinty Prompt is a a chrome extension designed to seamlessly improve and refine text inside any input field on the web using AI
+
 It integrates with the Google Gemini API to enchance clarity, tone and structure while remaning fast, non intrusive and privacy focused
 
 Source code is intentionally private due to security and intellectual property considerations
@@ -31,19 +32,18 @@ Infinty Prompt works directly inside input fields on any website
 - Domain based exclusion support
 - Clean, modern and minimal UI
 - Privacy first and non intrusive by design
-
-  ## High level Architecture
+## High level Architecture
   The extension follows a modular architecture:
-  - **Content Scripts**
+- **Content Scripts**
   Detect user interaction, inject UI elements and safely replace prompt
 
-  - **Background Service Worker**
+- **Background Service Worker**
   Handles secure AI API communication, validation and error handling
 
-  - **Side Panel Interface**
+- **Side Panel Interface**
   Provides an isolated chat style experience for advanced generation
 
-  - **Google Gemini API**
+- **Google Gemini API**
 Performs AI Prompt Optimization only on user initiated input
 
 See full details in Architecture-Overview.md
@@ -54,19 +54,18 @@ Infinty Prompt uses structured prompt engineering to ensure:
 - No unnecessary explanations
 - Preserved tone and intent
 - High reliability across use cases
+See full details in Prompt-Engineering-Strategy.md
 
-  See full details in Prompt-Engineering-Strategy.md
-
-  ## Privacy and Security
-  User trust is a core principle
-  - No background data collection
-  - No keystroke logging
-  - No analytics or tracking
-  - No storage of user prompt
-  - API Calls only happen on explicit user action
-  - API keys are securely handled and never exposed
+## Privacy and Security
+User trust is a core principle
+- No background data collection
+- No keystroke logging
+- No analytics or tracking
+- No storage of user prompt
+- API Calls only happen on explicit user action
+- API keys are securely handled and never exposed
  
-  Full policy available in Privacy-and-Security.md
+Full policy available in Privacy-and-Security.md
 
   ## Permissions Overview
   All requested Chrome Permissions are:
@@ -74,13 +73,13 @@ Infinty Prompt uses structured prompt engineering to ensure:
   - Purpose driven
   - Transparent
 
-    Detailed breakdown Chrome-Extension-Permissions.md
+Detailed breakdown Chrome-Extension-Permissions.md
 
   ## Testing
   The extension has been tested on
-  - chatgpt
-  - gemini
-  - claude
+  - Chatgpt
+  - Gemini
+  - Claude
   - Dynamic, framework heavy websites
 
   Focus areas
